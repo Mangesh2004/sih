@@ -12,8 +12,13 @@ const Navbar = () => {
         
 
         {/* Site name in the center */}
+        <div className="grid col-span-2 pl-10">
         <div className=" md:block text-black font-semibold  text-3xl flex items-center justify-center text-center">
           GradNexus
+        </div>
+        <div className="text-black text-xl ">
+          PVG COET 
+        </div>
         </div>
 
         {/* Mobile menu button */}
@@ -53,6 +58,15 @@ const Navbar = () => {
             className="relative inline-block px-4 py-2 text-black rounded group cursor-pointer"
           >
             Contact
+            <span className="absolute left-0 bottom-0 w-full h-0 bg-black transition-all duration-300 group-hover:h-[2px]" />
+          </ScrollLink>
+          <ScrollLink
+            to="team"
+            smooth
+            duration={500}
+            className="relative inline-block px-4 py-2 text-black rounded group cursor-pointer"
+          >
+            Team
             <span className="absolute left-0 bottom-0 w-full h-0 bg-black transition-all duration-300 group-hover:h-[2px]" />
           </ScrollLink>
         </div>
