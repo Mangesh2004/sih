@@ -1,19 +1,17 @@
-
-
+import Image from 'next/image';
 
 const members = [
-  { src: './dhanesh.jpg', name: 'Dhanesh Sathe', description: ' ' },
-  { src: './rohan.jpg', name: 'Rohan Sonawane', description: ' ' },
-  { src: './prarthana.jpg', name: 'Prarthana Khairnar', description: '' },
-  { src: './mangesh.jpg', name: 'Mangesh Waybhase', description: '' },
-  { src: './pranav.jpg', name: 'Pranav Sherekar', description: ' ' },
-  { src: './gayatri.jpg', name: 'Gayatri Dandge', description: ' ' },
+  { src: '/dhanesh.jpg', name: 'Dhanesh Sathe', description: ' ' },
+  { src: '/rohan.jpg', name: 'Rohan Sonawane', description: ' ' },
+  { src: '/prarthana.jpg', name: 'Prarthana Khairnar', description: '' },
+  { src: '/mangesh.jpg', name: 'Mangesh Waybhase', description: '' },
+  { src: '/pranav.jpg', name: 'Pranav Sherekar', description: ' ' },
+  { src: '/gayatri.jpg', name: 'Gayatri Dandge', description: ' ' },
 ];
 
 export default function Members() {
   return (
-    <div id="team" className="container mx-auto bg-gray-100 py-12 px-6" >
-
+    <div id="team" className="container mx-auto bg-gray-100 py-12 px-6">
       <div className="text-black text-4xl p-3 pb-5 flex items-center justify-center font-bold">
         Our Team
       </div>
@@ -23,10 +21,12 @@ export default function Members() {
             key={index} 
             className="relative overflow-hidden group h-[500px] bg-gray-200 rounded-lg shadow-lg"
           >
-            <img
+            <Image
               src={member.src}
               alt={member.name}
-              className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+              layout="fill"
+              objectFit="cover"
+              className="transform transition-transform duration-500 group-hover:scale-110"
             />
 
             {/* Glass effect with name and description */}

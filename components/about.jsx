@@ -46,7 +46,7 @@ export default function About() {
             Join us in building a legacy of excellence!
           </h3>
           <p className="text-lg text-gray-600">
-            Whether you're a recent graduate or a seasoned professional, the GradNexus offers valuable opportunities to engage, grow, and make a lasting impact.
+            Whether you are a recent graduate or a seasoned professional, the GradNexus offers valuable opportunities to engage, grow, and make a lasting impact.
           </p>
         </div>
       </div>
